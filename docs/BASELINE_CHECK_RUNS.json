@@ -1,0 +1,45 @@
+{
+  "schema": "jy/check-runs/v1",
+  "job_id": "JY-S038-P001",
+  "captured_at": "2026-09-14T00:00:00Z",
+  "environment": "cloud workspace (Anthropic cowork container), Python 3.11, Linux",
+  "executor_identity": "claude cowork session 01SaQzDRzMFXvRabmCC6JDJD",
+  "checks": [
+    {
+      "name": "baseline unittest (build-0001)",
+      "command": "python3 -m unittest discover -s tests -t .",
+      "result": "PASS",
+      "tests_passed": 13,
+      "tests_failed": 0
+    },
+    {
+      "name": "candidate unittest (0.1.1-partial)",
+      "command": "python3 -m unittest discover -s tests -t .",
+      "result": "PASS",
+      "tests_passed": 27,
+      "tests_failed": 0
+    },
+    {
+      "name": "live defect probes (findings A028-F1..F6)",
+      "result": "PASS",
+      "note": "all six findings reproduced on baseline and verified fixed on candidate"
+    },
+    {
+      "name": "no-network-import sweep",
+      "result": "PASS",
+      "note": "asserted inside the test suite"
+    },
+    {
+      "name": "Windows-native launch",
+      "result": "UNRUN",
+      "note": "no Windows runtime available this session"
+    },
+    {
+      "name": "hypothesis property tests",
+      "result": "UNRUN",
+      "note": "hypothesis not installable in this environment (egress proxy)"
+    }
+  ],
+  "independent_review": "NOT PERFORMED",
+  "verdict": "PARTIAL_CANDIDATE"
+}
