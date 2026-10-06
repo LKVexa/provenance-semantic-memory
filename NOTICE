@@ -2,5 +2,10 @@ Provenance Semantic Memory
 Copyright 2026 RUSSELL PHILIP SMITHSON
 
 Original project code and September 2026 modifications are provided under
-the Apache License, Version 2.0. See LICENSE.
+the GNU General Public License, version 3 only (GPL-3.0-only). See LICENSE.
 No third-party source code is vendored in this delivery.
+
+Licensing update: 2026-10-05. The current repository-level first-party work is
+licensed under GNU GPL version 3 only (SPDX: GPL-3.0-only). Existing third-party
+licenses, attribution and separately licensed components remain in force. This
+update does not purport to revoke licenses already granted for earlier copies.
